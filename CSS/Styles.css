@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  background-color: #144060;
   font-family: Arial, Helvetica, sans-serif;
 }
 .column {
@@ -23,7 +24,7 @@ body {
 }
 
 .mainText {
-	color: black;
+	color: white;
   font-size: 30px;
   font-family: sans-serif;
 }
@@ -65,11 +66,9 @@ body {
 .button2:hover {
   cursor: pointer;
   display: inline-block;
-  background-color: #d3d3d3;
+  background-color: #dd411e;
   transition: 0.2s;
 }
-
-
 
 
 .button {
@@ -123,7 +122,7 @@ body {
 
 .IndexButton {
   padding: 5px;
-  background-color: #d3d3d3;
+  background-color: #43aece;
   font-family: sans-serif;
   font-weight: bold;
 }
@@ -133,9 +132,10 @@ body {
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: rgb(229, 141, 46);
   vertical-align: bottom;
 }
+
 .logo {
   display: block;
   width: 65px;
@@ -158,13 +158,13 @@ body {
 }
 
 .header a:hover {
-  background-color: #ddd;
+  background-color: #2c8c94;
   color: black;
   transition: 0.25s;
 }
 
 .header a.active {
-  background-color: #d3d3d3;
+  background-color: #2c8c94;
   color: black;
 }
 
@@ -227,7 +227,7 @@ body {
   background-image: url("../media/Images/background.jpg"); /* references 1 folder outside the CSS folder */
 
   /* Set a specific height */
-  min-height: 650px;
+  min-height: 250px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
