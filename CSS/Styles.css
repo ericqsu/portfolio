@@ -48,69 +48,6 @@ body {
   font-family: sans-serif;
 }
 
-.button2 {
-  border-radius: 5px;
-  background-color: #dcdcdc;
-  border: none;
-  color: 	black;
-  text-align: center;
-  font-size: 10px;
-  padding: 10px;
-  width: 125px;
-  transition: all 0.2s;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: 0.2s;
-}
-
-.button2:hover {
-  cursor: pointer;
-  display: inline-block;
-  background-color: #dd411e;
-  transition: 0.2s;
-}
-
-
-.button {
-  border-radius: 5px;
-  background-color: Transparent;
-  border: none;
-  color: 	#202020;
-  text-align: center;
-  font-size: 25px;
-  padding: 10px;
-  width: 125px;
-  transition: all 0.2s;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.2s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -10px;
-  transition: 0.2s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-}
-
-/*Above is button animation */
-
 .responsive {
   width: 75%;
   height: auto;
@@ -127,15 +64,6 @@ body {
   font-weight: bold;
 }
 
-/*Text formatting*/
-/* Header, not the button. This includes the buttons and formatting for the buttons*/
-
-.header {
-  overflow: hidden;
-  background-color: rgb(229, 141, 46);
-  vertical-align: bottom;
-}
-
 .logo {
   display: block;
   width: 65px;
@@ -146,15 +74,73 @@ body {
   width: 100%;
 }
 
+.centre {
+  width: 50%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.header {
+  overflow: hidden;
+  background-color: rgb(229, 141, 46);
+  vertical-align: center;
+  align-content: center;
+}
+
+
+/* button formatting */
+
+.button {
+  border-radius: 10px;
+  background-color: Transparent;
+  border: none;
+  color: 	#202020;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  width: 125px;
+  transition: all 0.1s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -2px;
+  transition: 0.2s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+}
+
+
+/*Text formatting*/
+/* Header, not the button. This includes the buttons and formatting for the buttons*/
+
 .header a {
-  float: left;
   color: black;
   text-align: center;
-  padding: 5px;
   text-decoration: none;
   font-size: 20px;
   line-height: 25px;
   border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header a:hover {
@@ -166,16 +152,6 @@ body {
 .header a.active {
   background-color: #2c8c94;
   color: black;
-}
-
-.header-right {
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-  float: right;
-}
-
-.descriptionText {
-  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-  font-size: 25px;
 }
 
 @media screen and (max-width: 500px) {
@@ -204,27 +180,12 @@ body {
   will-change: opacity;
 }
 
-.animated-photo.is-visible {
-  opacity: 1;
-}
-
-.animated-photo2 {
-  transform: scale(0.5);
-  will-change: scale;
-  transition: transform 1.5s;
-}
-
-.animated-photo2.is-visible {
-  transform: scale(1.5);
-}
-
-
 
 /* All parallax & background related code starts here */
 
 .parallax {
   /* The image used */
-  background-image: url("../media/Images/background.jpg"); /* references 1 folder outside the CSS folder */
+  /* background-image: url("../media/Images/background.jpg"); /* references 1 folder outside the CSS folder */
 
   /* Set a specific height */
   min-height: 250px;
@@ -234,39 +195,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-}
-
-.parallax2 {
-  /* The image used */
-  background-image: url("../media/Images/N2.jpg");
-
-  min-height: 675px;
-  width: 100%;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-@media only screen and (max-device-width: 750px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
-
-.parallax3 {
-  /* The image used */
-  background-image: url("../media/Images/Small.jpg");
-
-  min-height: 950px;
-  width: 100%;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
 }
